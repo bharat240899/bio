@@ -1,0 +1,10 @@
+:root {
+    --gradient-color-1: #38EF7D;
+    --gradient-color-2: #11998E;
+  }
+  .gradient-text {
+    color: transparent;
+    background-image: linear-gradient(to right, var(--gradient-color-1), var(--gradient-color-2));
+    -webkit-background-clip: text; /* Fallback for WebKit-based browsers */
+    background-clip: text;
+  }

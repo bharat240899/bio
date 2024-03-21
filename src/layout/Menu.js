@@ -10,7 +10,7 @@ const Menu = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-black">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand mr-auto">Home</Link>
         
