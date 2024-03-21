@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MainBanner from '../components/Main_Banner';
 import Messages from '../contents/Messages';
+import Footer from '../layout/Footer'; // Import Footer component
 import '../css/common_styles.css'; // Note: Use single quotes around the file path
 
 const Home = () => {
@@ -29,7 +30,10 @@ const Home = () => {
     }, [description]); // Dependency array ensures effect runs when description changes
 
     return (
-        <MainBanner title={title} description={typedDescription} classNames={classNames} />
+        <>
+            <MainBanner title={title} description={typedDescription} classNames={classNames} />
+            <Footer /> {/* Include Footer component here */}
+        </>
     );
 };
 

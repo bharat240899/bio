@@ -16,6 +16,13 @@ code {
 html,.mainbanner,h1{
   background-color: #000000;
 }
+.common .navbar-brand{
+  font-family:bangers;
+  padding: 4px;
+}
+.common .navbar-toggler{
+  padding: 0 !important
+}
 .mainbanner h1{
   font-size: 3.6rem;
   font-family:bangers;
@@ -25,4 +32,10 @@ html,.mainbanner,h1{
 }
 .default_spacing{
   padding-top: 2rem;
+}
+/* footer.css */
+.footer {
+  background: 'linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.8) 100%)';
+  box-shadow: '0px -5px 15px rgba(0,0,0,0.3)';
+  border-top: '1px solid rgba(255, 255, 255, 0.2)' 
 }

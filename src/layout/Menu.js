@@ -10,9 +10,9 @@ const Menu = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav className="common navbar navbar-expand-lg navbar-dark bg-black">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand mr-auto">Home</Link>
+        <Link to="/" className="navbar-brand mr-auto gradient-text">Bharath Kumar Velugu</Link>
         
         <button 
           className="navbar-toggler" 
@@ -30,13 +30,13 @@ const Menu = () => {
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto"> {/* Use ms-auto class to push items to the end */}
             <li className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
-              <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>About</Link>
+              <Link to="/about" className="nav-link gradient-text" onClick={() => setIsOpen(false)}>About</Link>
             </li>
             <li className={`nav-item ${location.pathname === '/services' ? 'active' : ''}`}>
-              <Link to="/services" className="nav-link" onClick={() => setIsOpen(false)}>Services</Link>
+              <Link to="/services" className="nav-link gradient-text" onClick={() => setIsOpen(false)}>Services</Link>
             </li>
             <li className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>
-              <Link to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>Contact</Link>
+              <Link to="/contact" className="nav-link gradient-text" onClick={() => setIsOpen(false)}>Contact</Link>
             </li>
           </ul>
         </div>
