@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import MainBanner from '../components/Main_Banner';
 import Messages from '../contents/Messages';
-import Footer from '../layout/Footer'; // Import Footer component
 import '../css/common_styles.css'; // Note: Use single quotes around the file path
-
+import TechnicalSkills from '../components/Skills';
 const Home = () => {
     const { title, description } = Messages.homepage.mainbanner;
     const classNames = {
-        heading1: "gradient-text text-center",
+        heading1: "primary-gradient text-center",
         descriptive_text: "text-center"
     };
     //Refactor pending
@@ -31,8 +30,8 @@ const Home = () => {
 
     return (
         <>
-            <MainBanner title={title} description={typedDescription} classNames={classNames} />
-            <Footer /> {/* Include Footer component here */}
+            <MainBanner title={title} description={typedDescription} classNames={classNames} />,
+            <TechnicalSkills/>
         </>
     );
 };

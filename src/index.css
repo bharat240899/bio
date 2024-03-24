@@ -13,8 +13,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-html,.mainbanner,h1{
-  background-color: #000000;
+body{
+  background-color: #000000 !important;
 }
 .common .navbar-brand{
   font-family:bangers;
@@ -24,14 +24,14 @@ html,.mainbanner,h1{
   padding: 0 !important
 }
 .mainbanner h1{
-  font-size: 3.6rem;
   font-family:bangers;
 }
 .mainbanner p{
   color: #ffffff;
 }
 .default_spacing{
-  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 /* footer.css */
 .footer {

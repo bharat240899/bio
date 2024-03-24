@@ -5,7 +5,8 @@ import Menu from './layout/Menu';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Services from './pages/Services';
+import Services from './pages/Services'
+import Footer from './layout/Footer'; // Import Footer component;
 import './css/common_styles.css'; 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

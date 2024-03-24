@@ -8,7 +8,7 @@ import githubIcon from '../assets/GitHub.png';
 
 const Footer = () => {
     return (
-        <footer className="footer fixed-bottom py-3" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.8) 100%)', boxShadow: '0px -5px 15px rgba(0,0,0,0.3)', borderTop: '1px solid rgba(255, 255, 255, 0.2)' }}>
+        <footer className="footer py-3" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.8) 100%)', boxShadow: '0px -5px 15px rgba(0,0,0,0.3)', borderTop: '1px solid rgba(255, 255, 255, 0.2)', marginTop: 'auto' }}>
             <div className="container">
                 <div className="row justify-content-center mb-3">
                     <div className="col-auto">
@@ -35,7 +35,7 @@ const Footer = () => {
                 </div>
                 <div className="row justify-content-center mt-2">
                     <div className="col-auto">
-                        <p className="mb-0 text-center text-white">&copy; 2024 Your Name. All Rights Reserved.</p>
+                        <p className="mb-0 text-center text-white">&copy; 2024 Bharath Kumar Velugu. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
