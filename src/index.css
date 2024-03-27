@@ -1,5 +1,6 @@
 /* Define Bangers font family */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,6 +20,7 @@ body{
 .common .navbar-brand{
   font-family:bangers;
   padding: 4px;
+  font-size: 1.6rem;
 }
 .common .navbar-toggler{
   padding: 0 !important
@@ -30,12 +32,61 @@ body{
   color: #ffffff;
 }
 .default_spacing{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4em;
 }
-/* footer.css */
-.footer {
-  background: 'linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.8) 100%)';
-  box-shadow: '0px -5px 15px rgba(0,0,0,0.3)';
-  border-top: '1px solid rgba(255, 255, 255, 0.2)' 
+head{
+  background-color: black;
+}
+.container {
+  position: relative;
+}
+video{
+  pointer-events: none;
+}
+/* Define the glow effect */
+@keyframes glowing {
+  0% { box-shadow: 0 0 0 0 white; }
+  50% { box-shadow: 0 0 8px 2px white; }
+  100% { box-shadow: 0 0 0 0 white; }
+}
+
+/* Apply the glow effect to the focused element when focus is visible */
+:focus-visible {
+  outline: none; /* Hide default outline */
+  animation: glowing 9s infinite; /* Apply glowing animation */
+}
+
+.multigrid h3{
+  font-size: 1.6rem;
+}
+.multigrid p{
+  font-size: 1rem;
+}
+/* For webkit-based browsers */
+/* Change scrollbar track color */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
+
+/* Change scrollbar handle (thumb) color */
+::-webkit-scrollbar-thumb {
+  background-color: #586069; /* Dark grey color */
+  border-radius: 4px; /* Adjust border-radius to round the corners */
+}
+
+/* Change scrollbar track color (inside) */
+::-webkit-scrollbar-track {
+  background-color: #000; /* Light grey color */
+}
+
+/* For Mozilla Firefox */
+/* Change scrollbar handle (thumb) color */
+/* Note: Firefox uses different pseudo-elements for scrollbar customization */
+* {
+  scrollbar-color: #586069 #000; /* Dark grey thumb on light grey track */
+}
+
+/* You can also adjust scrollbar width for Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
 }

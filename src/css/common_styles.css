@@ -16,3 +16,20 @@
     -webkit-background-clip: text; /* Fallback for WebKit-based browsers */
     background-clip: text;
   }
+  .common .btn-gradient{
+    background-image: linear-gradient(to right, #56CCF2, #2F80ED);
+    color: white;
+    border-radius: 60px; /* Adjust the value to change the roundness of the corners */
+    padding: 8px 60px; /* Adjust the padding to control the size of the button */
+    font-weight: 400;
+    text-align: center;
+    display: inline-block; /* Ensures the button width fits its content */
+    cursor: pointer;
+    transition: background-color 0.4s ease; /* Add a smooth transition effect */
+    text-decoration: none;
+  }
+  
+  .common .btn-gradient:hover {
+    filter: brightness(90%);  /* Adjust the hover color as needed */
+  }
+  

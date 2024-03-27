@@ -10,9 +10,9 @@ const Menu = () => {
   };
 
   return (
-    <nav className="common navbar navbar-expand-lg navbar-dark bg-black">
+    <nav className="common default_spacing navbar navbar-expand-lg navbar-dark bg-black">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand mr-auto primary-gradient">Bharath Kumar Velugu</Link>
+        <Link to="/" className="navbar-brand mr-auto primary-gradient" autoFocus>Bharath Kumar Velugu</Link>
         
         <button 
           className="navbar-toggler" 
