@@ -1,3 +1,6 @@
+import Tcs from '../assets/Tcs.png';
+import Cognizant from '../assets/Cognizant.png';
+
 const Messages = {
     homepage: {
         mainbanner: {
@@ -26,10 +29,37 @@ const Messages = {
                 description1: "Ready Refresh is a service that provides home delivery of bottled water and beverage products. It offers a wide range of products, including bottled water, sparkling water, flavored beverages, and other refreshment options. Customers can customize their delivery schedule and order products online or through a mobile app for convenient home delivery. The service aims to provide convenience and hydration solutions to customers seeking quality bottled water and beverage products delivered directly to their doorstep.",
                 title2: "The Coco Cola Company - Global Access Management",
                 description2: "The Coca-Cola Company - Global Access Management is a comprehensive project designed to facilitate user access management on a global scale. It encompasses various functionalities aimed at creating, logging, and managing user accounts efficiently. Additionally, it provides robust social login features, enhancing user experience and engagement. With a focus on security and usability, this project aims to streamline access control processes while ensuring seamless user interactions across different platforms and regions."
-            }
-        }
+            },
+        },
+        experiences: {
+            header: "Experience",
+            data: [
+                {
+                    logo: Tcs,
+                    institution: "Tata Consultancy Services",
+                    title: "Senior Front End Developer",
+                    details: [
+                        "Created and executed software solutions to enhance business operations and boost efficiency.",
+                        "Worked closely with designers and developers to transform design concepts into functional web applications."
+                    ],
+                    startDate: "October 2022",
+                    endDate: "August 2023"
+                },
+                {
+                    logo: Cognizant,
+                    institution: "Cognizant Technology Solutions",
+                    title: "Programmer Analyst",
+                    details: [
+                        "Developed user-friendly web interfaces with HTML5, CSS3, and JavaScript, utilizing frameworks like React and Angular.",
+                        "Operated in an agile setting as a Front End/UI developer, ensuring responsiveness, SEO, and accessibility.",
+                        "Wrote compatible code for various browsers like Mozilla, Safari, and Chrome."
+                    ],
+                    startDate: "December 2020",
+                    endDate: "September 2022"
+                }
+            ]
+        },
     }
-
 }
 
-export default Messages; 
+export default Messages;

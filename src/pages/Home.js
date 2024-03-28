@@ -10,6 +10,7 @@ import MultiGrid from '../components/MultiGrid';
 import Links from '../redirects/Links';
 import ReadyRefresh from '../assets/ReadyRefresh.mp4'; // Import your video source
 import Coke from '../assets/Coke.mp4'; // Import your video source
+import Experience from '../components/Experiences';
 
 const Home = () => {
     const { title, description } = Messages.homepage.mainbanner;
@@ -24,9 +25,11 @@ const Home = () => {
     const mediaDescription2 = Messages.homepage.gridbanner.description2;
     // Concatenate the two descriptions into a single string
     const mediaDescription = `${mediaDescription1} ${mediaDescription2}`;
-    const { title1, description1, title2, description2 } =  Messages.homepage.gridbanner.project;
+    const { title1, description1, title2, description2 } = Messages.homepage.gridbanner.project;
     const { readyRefresh, CokeGam } = Links;
-    
+    const { header, data } = Messages.homepage.experiences;
+
+
     return (
         <>
             <MainBanner title={title} description={description} classNames={classNames} typewriter={true} />
@@ -35,24 +38,27 @@ const Home = () => {
                 mediaType='video'
                 mediaSource={Dartboard} // Pass the video source dynamically
                 mediaTitle={mediaTitle} // Pass the video title dynamically
-                mediaDescription={mediaDescription} 
-                headingClasses='secondary-gradient'
-                // Pass the combined video description dynamically
+                mediaDescription={mediaDescription}
+                headingClasses='primary-gradient'
+            // Pass the combined video description dynamically
             />
-            <MultiGrid 
-            redirectUrl1={readyRefresh} 
-            redirectUrl2={CokeGam}
-            mediaType='video'
-            mediaData1={ReadyRefresh}
-            mediaData2={Coke}
-            title1={title1}
-            title2={title2}
-            description1={description1}
-            description2={description2}
-            btnText1='See live'
-            btnText2='See Live'
-            btnClasses='btn-gradient'
+            <MultiGrid
+                redirectUrl1={readyRefresh}
+                redirectUrl2={CokeGam}
+                mediaType='video'
+                mediaData1={ReadyRefresh}
+                mediaData2={Coke}
+                title1={title1}
+                title2={title2}
+                description1={description1}
+                description2={description2}
+                btnText1='See live'
+                btnText2='See Live'
+                btnClasses='btn-gradient'
+                compTitle='Live Projects'
+                headingClasses='primary-gradient'
             />
+            <Experience header={header} data={data} />
         </>
     );
 };

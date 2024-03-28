@@ -6,7 +6,7 @@ const TechnicalSkills = () => {
 
     return (
         <div className="common technical-skills default_spacing bg-black text-white rounded">
-            <h2 className="secondary-gradient section-title mb-4">Technical Skills <span>&lt;/&gt;</span></h2>
+            <h2 className="primary-gradient section-title mb-4">Technical Skills <span>&lt;/&gt;</span></h2>
 
             {/* Iterate over categories */}
             {Messages.homepage.categories.map((category, index) => (

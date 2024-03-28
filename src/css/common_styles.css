@@ -1,8 +1,8 @@
 :root {
     --gradient-color-1: #38EF7D;
     --gradient-color-2: #11998E;
-    --gradient-color-3: #8E2DE2;
-    --gradient-color-4: #4A00E0;
+    --gradient-color-3: #56CCF2;
+    --gradient-color-4: #2F80ED;
   }
   .common .primary-gradient{
     color: transparent;
@@ -17,10 +17,10 @@
     background-clip: text;
   }
   .common .btn-gradient{
-    background-image: linear-gradient(to right, #56CCF2, #2F80ED);
+    background-image: linear-gradient(to right,var(--gradient-color-3), var(--gradient-color-4));
     color: white;
     border-radius: 60px; /* Adjust the value to change the roundness of the corners */
-    padding: 8px 60px; /* Adjust the padding to control the size of the button */
+    padding: 6px 60px; /* Adjust the padding to control the size of the button */
     font-weight: 400;
     text-align: center;
     display: inline-block; /* Ensures the button width fits its content */
