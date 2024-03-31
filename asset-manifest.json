@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/mybio/static/css/main.3c6c4cac.css",
+    "main.js": "/mybio/static/js/main.66be9a4e.js",
+    "static/js/453.36e769d5.chunk.js": "/mybio/static/js/453.36e769d5.chunk.js",
+    "static/media/Teamm.jpg": "/mybio/static/media/Teamm.c6542d5e0fbfce76bf4b.jpg",
+    "static/media/BioPic.jpg": "/mybio/static/media/BioPic.738fbe57a9a8b9e37898.jpg",
+    "static/media/Technology.jpg": "/mybio/static/media/Technology.1b43b513114c1e297203.jpg",
+    "static/media/Dartboard.mp4": "/mybio/static/media/Dartboard.e18263684db45198eacd.mp4",
+    "static/media/ReadyRefresh.mp4": "/mybio/static/media/ReadyRefresh.3599e1175a6dd4896e3d.mp4",
+    "static/media/Editing.jpg": "/mybio/static/media/Editing.accfc2ab1e1c3d247d76.jpg",
+    "static/media/WebDevelopment.jpg": "/mybio/static/media/WebDevelopment.f133f08408c768063465.jpg",
+    "static/media/Tutor.jpg": "/mybio/static/media/Tutor.883014f7c51b208da19c.jpg",
+    "static/media/Coke.mp4": "/mybio/static/media/Coke.d2fdb9df33f5967c4cd1.mp4",
+    "static/media/SEO.jpg": "/mybio/static/media/SEO.55f2f794b4141ba5974b.jpg",
+    "static/media/WebDesign.jpg": "/mybio/static/media/WebDesign.80c571ac9507e39c2d71.jpg",
+    "static/media/Testing.jpg": "/mybio/static/media/Testing.17dfcb76ff3bd5b83af0.jpg",
+    "static/media/CMS.jpg": "/mybio/static/media/CMS.b4659f62eb47c9fd0738.jpg",
+    "static/media/Bharath_Kumar_resume.pdf": "/mybio/static/media/Bharath_Kumar_resume.555cc0077b0fbe26c6b6.pdf",
+    "static/media/PageError.png": "/mybio/static/media/PageError.e7e0328dd8b3a7c5a1af.png",
+    "static/media/Cognizant.png": "/mybio/static/media/Cognizant.6baebcdf511569372a5b.png",
+    "index.html": "/mybio/index.html",
+    "main.3c6c4cac.css.map": "/mybio/static/css/main.3c6c4cac.css.map",
+    "main.66be9a4e.js.map": "/mybio/static/js/main.66be9a4e.js.map",
+    "453.36e769d5.chunk.js.map": "/mybio/static/js/453.36e769d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c6c4cac.css",
+    "static/js/main.66be9a4e.js"
+  ]
+}
