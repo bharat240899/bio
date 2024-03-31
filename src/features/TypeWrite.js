@@ -1,28 +1,27 @@
-import React, { useState, useEffect } from 'react';
-//Integration pending
-const TypeWrite = ({ text, speed }) => {
-  const [displayText, setDisplayText] = useState('');
+import  { useState, useEffect } from 'react';
+
+const TypeWrite = ({ text , speed }) => {
+  const [typedText, setTypedText] = useState('');
 
   useEffect(() => {
     let currentIndex = 0;
-    const intervalId = setInterval(() => {
-      if (currentIndex <= text.length) {
-        setDisplayText(text.slice(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(intervalId);
-      }
+    const interval = setInterval(() => {
+      setTypedText(prevText => {
+        // Append next character if currentIndex is within text length
+        if (currentIndex < text.length) {
+          return prevText + text[currentIndex];
+        } else {
+          clearInterval(interval); // Stop the interval if all characters are typed
+          return prevText;
+        }
+      });
+      currentIndex++;
     }, speed);
-  
-    // Throw an error after the interval has been set up
-    setTimeout(() => {
-      throw new Error('An error occurred in the useEffect hook');
-    }, 10000); // Adjust the timeout as needed
-  
-    return () => clearInterval(intervalId);
+
+    return () => clearInterval(interval); // Cleanup the interval
   }, [text, speed]);
-  
-  return <p>{displayText}</p>;
+
+  return typedText; // Return the typedText JSX
 };
 
 export default TypeWrite;

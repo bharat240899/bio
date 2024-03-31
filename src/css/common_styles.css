@@ -1,10 +1,69 @@
 :root {
-    --gradient-color-1: #38EF7D;
-    --gradient-color-2: #11998E;
+  --gradient-color-1: #38EF7D;
+  --gradient-color-2: #11998E;
+  --gradient-color-3: #56CCF2;
+  --gradient-color-4: #2F80ED;
+}
+
+.common .primary-gradient {
+  color: transparent;
+  background-image: linear-gradient(to right, var(--gradient-color-1), var(--gradient-color-2));
+  -webkit-background-clip: text;
+  /* Fallback for WebKit-based browsers */
+  background-clip: text;
+}
+
+.common .secondary-gradient {
+  color: transparent;
+  background-image: linear-gradient(to right, var(--gradient-color-3), var(--gradient-color-4));
+  -webkit-background-clip: text;
+  /* Fallback for WebKit-based browsers */
+  background-clip: text;
+}
+
+.common .btn-gradient {
+  background-image: linear-gradient(to right, var(--gradient-color-3), var(--gradient-color-4));
+  color: white;
+  border-radius: 60px;
+  /* Adjust the value to change the roundness of the corners */
+  padding: 8px 60px;
+  /* Adjust the padding to control the size of the button */
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  /* Ensures the button width fits its content */
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  /* Add a smooth transition effect */
+  text-decoration: none;
+}
+
+.common .btn-gradient:hover {
+  filter: brightness(90%);
+  text-decoration: underline;
+  /* Adjust the hover color as needed */
+}
+
+
+/* Common Animations */
+.colour-transistion {
+  margin-top: 20px;
+  color: transparent;
+  background: linear-gradient(to left, #ffffff, #5e00a0, #2309cf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* animation: fillText 20s forwards infinite; */
+  animation: fillText 4s forwards infinite;
+}
+
+@keyframes fillText {
+  0% {
+    background-size: 0% auto;
+    /* Start with no gradient fill */
   }
-  .common .gradient-text{
-    color: transparent;
-    background-image: linear-gradient(to right, var(--gradient-color-1), var(--gradient-color-2));
-    -webkit-background-clip: text; /* Fallback for WebKit-based browsers */
-    background-clip: text;
+
+  100% {
+    background-size: 100% auto;
+    /* Fill text with gradient completely */
   }
+}
