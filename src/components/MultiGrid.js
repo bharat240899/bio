@@ -13,11 +13,14 @@ const MultiGrid = ({
     description2,
     btnText1,
     btnText2,
-    btnClasses
+    btnClasses,
+    compTitle,
+    headingClasses
 }) => {
 
     return (
-        <Container className='default_spacing multigrid'>
+        <Container className='common default_spacing multigrid'>
+            <h3 className={headingClasses}>{compTitle}</h3>
             <Row className='mt-5'>
                 {/* First Column */}
                 <Col xs={12} className='mb-4'>

@@ -20,16 +20,19 @@ body{
 .common .navbar-brand{
   font-family:bangers;
   padding: 4px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+}
+.nav-item{
+  font-size: 1.2rem;
+}
+.transparent-bg{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nav-item a:hover {
+  text-decoration: underline;
 }
 .common .navbar-toggler{
   padding: 0 !important
-}
-.mainbanner h1{
-  font-family:bangers;
-}
-.mainbanner p{
-  color: #ffffff;
 }
 .default_spacing{
   margin-bottom: 2.4em;
@@ -52,8 +55,8 @@ video{
 
 /* Apply the glow effect to the focused element when focus is visible */
 :focus-visible {
-  outline: none; /* Hide default outline */
-  animation: glowing 9s infinite; /* Apply glowing animation */
+  outline: 1px solid white; /* Hide default outline */
+  animation: glowing 6s infinite; /* Apply glowing animation */
 }
 
 .multigrid h3{
@@ -89,4 +92,182 @@ video{
 /* You can also adjust scrollbar width for Firefox */
 * {
   scrollbar-width: thin; /* Thin scrollbar */
+}
+/* Styles for loader */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles for quotes */
+.quote-container {
+  margin-top: 20px;
+  font-style: italic;
+  text-align: center;
+}
+/* Animate.css */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.floating-text {
+  animation: float 3s ease-in-out infinite;
+}
+
+.loader  {
+  animation: rotate 1s infinite;  
+  height: 50px;
+  width: 50px;
+}
+
+.loader:before,
+.loader:after {   
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 20px;  
+  width: 20px;
+}
+.loader:before {
+  animation: ball1 1s infinite;  
+  background-color: #cb2025;
+  box-shadow: 30px 0 0 #f8b334;
+  margin-bottom: 10px;
+}
+.loader:after {
+  animation: ball2 1s infinite; 
+  background-color: #00a096;
+  box-shadow: 30px 0 0 #97bf0d;
+}
+
+@keyframes rotate {
+  0% { 
+    -webkit-transform: rotate(0deg) scale(0.8); 
+    -moz-transform: rotate(0deg) scale(0.8);
+  }
+  50% { 
+    -webkit-transform: rotate(360deg) scale(1.2); 
+    -moz-transform: rotate(360deg) scale(1.2);
+  }
+  100% { 
+    -webkit-transform: rotate(720deg) scale(0.8); 
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #f8b334;
+  }
+  50% {
+    box-shadow: 0 0 0 #f8b334;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #017de2;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #97bf0d;
+  }
+  50% {
+    box-shadow: 0 0 0 hsl(186, 97%, 46%);
+    margin-top: -20px;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #97bf0d;
+    margin-top: 0;
+  }
+}
+/* MainBanner.css */
+@keyframes flyIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* .fly-in {
+  animation: flyIn  0.5s ease-in-out forwards;
+ 
+} */
+.animated-card {
+  opacity: 0;
+  animation: fadeIn 2.2s forwards; /* Animation duration and timing */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-toggler-icon {
+    display: block;
+  }
+}
+.max-w-100 {
+  max-width: 150px;
+}
+
+
+@media (min-width:768px){
+  .mainbanner.text-overlay  {
+    position: relative;
+  }
+  
+  .text-overlay .mainbanner_content {
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    transform: translate(-28%, -50%);
+    z-index: 1; 
+  }  
 }
