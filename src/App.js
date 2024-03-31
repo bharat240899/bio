@@ -26,7 +26,7 @@ const App = () => {
         <Router> {/* Wrap your Routes with the Router component */}
         <div>
         <Routes>
-            <Route path="/home" exact element={<Home/>} />
+            <Route path='/mybio' exact element={<Home/>} />
             <Route path="/en" exact element={<Home/>} />
             <Route path="/" exact element={<Home/>} />
             <Route path="/contact" element={<Contact />} />
