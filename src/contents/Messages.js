@@ -1,13 +1,23 @@
 import Tcs from '../assets/Tcs.png';
 import Cognizant from '../assets/Cognizant.png';
+import WebDevelopment from '../assets/WebDevelopment.jpg';
+import WebDesign from '../assets/WebDesign.jpg';
+import SEO from '../assets/SEO.jpg';
+import CMSImage from '../assets/CMS.jpg';
+import TestingImage from '../assets/Testing.jpg';
+import EditingImage from '../assets/Editing.jpg';
+import TutoringImage from '../assets/Tutor.jpg';
 
 const Messages = {
     homepage: {
-        mainbanner: {
+        maingrid_banner: {
             title: "Welcome to my social space!",
             description: "I am a Software Engineer with a passion for front-end application design and development. With over 3 years of experience, I specialize in delivering engaging user experiences through efficient website development, feature optimization, and relentless debugging.",
         },
-        // Define categories and their respective skills
+        promobanner:{
+            promo_title : 'Looking for digital solutions to boost your business?',
+            promo_description: 'Checkout my range of digital services that can potentially boost up your business online.'
+        },
         categories: [
             { title: 'Web Development', skills: ['HTML5', 'CSS', 'Bootstrap', 'SASS', 'SCSS', 'jQuery', 'React JS', 'Angular 9', 'Node JS', 'JSON', 'Responsive Web Design', 'AJAX'] },
             { title: 'Programming Languages', skills: ['JavaScript', 'Python', 'Java', 'C Programming'] },
@@ -59,6 +69,27 @@ const Messages = {
                 }
             ]
         },
+    },
+    services: {
+        mainbanner: {
+            title: 'Elevate Your Online Presence Now. ',
+            description: `Expert Guidance for Digital Success. Let's Soar Together in the Digital World of Opportunities.`,
+        },
+        cardsData : [
+            { title: 'Web Design', image: WebDesign, description: 'Creative and innovative web design solutions for your business.' },
+            { title: 'Web Development', image: WebDevelopment, description: 'Expert web development services tailored to your needs.' },
+            { title: 'SEO', image: SEO, description: 'Improve your website\'s search engine visibility with our SEO services.' },
+            { title: 'CMS', image: CMSImage, description: 'Powerful content management system solutions to manage your website efficiently.' },
+            { title: 'Testing', image: TestingImage, description: 'Comprehensive testing services to ensure the quality and reliability of your software applications.' },
+            { title: 'Editing', image: EditingImage, description: 'Professional video editing services to enhance the quality of your videos.' },
+            { title: 'Tutoring', image: TutoringImage, description: 'Personalized tutoring services to help you master various subjects and skills.' },
+          ],
+    },
+    contact:{
+        mainbanner:{
+            title:`Let's Team!`,
+            description:`Hey there! I'm excited to connect with you and explore potential collaborations. Whether you're interested in discussing projects, sharing ideas, or simply saying hello, I'm here to chat.`
+        }
     }
 }
 

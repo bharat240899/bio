@@ -5,11 +5,11 @@ const Experience = ({ header, data }) => {
         <div className='common default_spacing'>
             <h3 className='primary-gradient'>{header}</h3>
             {data.map((experience, index) => (
-                <div key={index} className="experience-card text-white border border-1 rounded p-4 mb-4 shadow-sm d-flex align-items-center">
-                    <div className="experience-logo flex-shrink-0 me-4 max-w-100">
+                <div key={index} className="bg-dark experience-card text-white border border-1 rounded p-4 mb-4 shadow-sm d-flex flex-column flex-md-row align-items-md-center">
+                    <div className="experience-logo flex-shrink-0 me-md-4 mb-3 mb-md-0 max-w-100">
                         <img src={experience.logo} alt={experience.institution} className="logo-img img-fluid rounded" />
                     </div>
-                    <div className="experience-info ms-5">
+                    <div className="experience-info">
                         <h3 className="institution-name fs-5 mb-3">{experience.institution}</h3>
                         <p className="title fw-bold mb-3">{experience.title}</p>
                         <ul className="details fs-6 mb-3">

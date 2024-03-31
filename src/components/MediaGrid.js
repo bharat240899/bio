@@ -1,17 +1,20 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import TypeWrite from '../features/TypeWrite';
 
-const MediaGrid = ({ 
-    mediaOnRight = false, 
-    button = false, 
-    mediaType = 'video', 
-    srcUrl, 
+const MediaGrid = ({
+    mediaOnRight = false,
+    externalredirect,
+    mediaType = 'video',
+    srcUrl,
     btnText,
-    mediaSource, 
-    mediaTitle, 
-    mediaDescription, 
-    headingClasses, 
-    btnClasses 
+    mediaSource,
+    mediaTitle,
+    mediaDescription,
+    headingClasses,
+    btnClasses,
+    typewriter,
+    primaryHeader
 }) => {
     const textColProps = { xs: 12, md: 7, className: mediaOnRight ? 'order-md-2' : '' };
     const mediaColProps = { xs: 12, md: 5, className: mediaOnRight ? 'order-md-1' : '' };
@@ -20,12 +23,33 @@ const MediaGrid = ({
         <Row className="common default_spacing align-items-center">
             <Col {...textColProps}>
                 <div className="p-3 text-white">
-                    <h3 className={headingClasses} aria-label={mediaTitle}>
-                        {mediaTitle}
-                    </h3>
-                    <p aria-label={`${mediaTitle} Description`}>{mediaDescription}</p>
-                    {/* Render button only if the button prop is true */}
-                    {button && <a className={btnClasses} href={srcUrl} target='_blank' rel='noreferrer'>{btnText}</a>}
+                    {primaryHeader ? (
+                        <h1 className={headingClasses} aria-label={mediaTitle}>{mediaTitle}</h1>
+                    ) : (
+                        <h3 className={headingClasses} aria-label={mediaTitle}>
+                            {mediaTitle}
+                        </h3>
+                    )
+                    }
+
+                    {typewriter ? (
+                        <p aria-label={`${mediaTitle} Description`}>
+                            <TypeWrite text={mediaDescription} speed={30} />
+                        </p>
+                    )
+                    : (
+                            <p aria-label={`${mediaTitle} Description`}>
+                                {mediaDescription}
+                            </p>
+
+                    )}
+                    {externalredirect ? (
+                      <a className={btnClasses} href={srcUrl} target='_blank'  rel='noreferrer'>{btnText}</a>
+                    ) :(
+                     <a className={btnClasses} href={srcUrl}  rel='noreferrer'>{btnText}</a>
+                    
+                    )}
+                    
                 </div>
             </Col>
             <Col {...mediaColProps}>
